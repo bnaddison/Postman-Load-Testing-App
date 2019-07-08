@@ -10,20 +10,34 @@ namespace Postman_Load_Tester
 {
     public class Resources
     {
+        
         public static class Collections
         {
-            public static ArrayList List = new ArrayList();
+            public static List<KeyValuePair<string, string>> List = new List<KeyValuePair<string, string>>();
+            public static string Selected = "";
+            public static string[] Options = { "Add Collection", "Select Collection" };
+
+            
         }
 
         public static class Environments
         {
-            public static ArrayList List = new ArrayList();
+            public static List<KeyValuePair<string, string>> List = new List<KeyValuePair<string, string>>();
+            public static string Selected = "";
+            public static string[] Options = { "Add Environment", "Select Environment" };
+        }
+
+        public static class ApiKeys
+        {
+            public static List< KeyValuePair<string, string> > List = new List<KeyValuePair<string, string>>();
+            public static string Selected = "";
+            public static string[] Options = { "Add API Key", "Select API Key" };
         }
 
         public static class UI
         {
             public static string[] Options = {
-                "Add Environment", "Add Collection", "Change Number of Virtual Users", "Run Load Test"
+                "Environments Management", "Collections Management", "API Keys Management", "Change Number of Virtual Users", "Run Load Test"
             };
 
             public static int VirtualUsers = 10;

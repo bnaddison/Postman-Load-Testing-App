@@ -8,3 +8,11 @@
 /.vs/Postman Load Tester/v15/Server/sqlite3/storage.ide-wal
 /Postman Load Tester/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 *.suo
+/Postman Load Tester/bin/Debug/Postman Load Tester.exe
+/Postman Load Tester/bin/Debug/Postman Load Tester.exe.config
+/Postman Load Tester/bin/Debug/Postman Load Tester.pdb
+/Postman Load Tester/obj/Debug/Postman Load Tester.csproj.CoreCompileInputs.cache
+/Postman Load Tester/obj/Debug/Postman Load Tester.csproj.FileListAbsolute.txt
+/Postman Load Tester/obj/Debug/Postman Load Tester.csprojAssemblyReference.cache
+/Postman Load Tester/obj/Debug/Postman Load Tester.exe
+/Postman Load Tester/obj/Debug/Postman Load Tester.pdb
