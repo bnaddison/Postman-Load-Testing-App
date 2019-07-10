@@ -45,7 +45,7 @@ namespace Postman_Load_Tester
                         }
                         if (environmentInput == "2")
                         {
-                            Select("Environment", Resources.Environments.List, Resources.Environments.Selected);
+                            Select("Environment", Resources.Environments.List, ref Resources.Environments.Selected);
                         }
                     }
                 }
@@ -66,7 +66,7 @@ namespace Postman_Load_Tester
                         }
                         if (collectionInput == "2")
                         {
-                            Select("Collection", Resources.Collections.List, Resources.Collections.Selected);
+                            Select("Collection", Resources.Collections.List, ref Resources.Collections.Selected);
                         }
                     }
                 }
@@ -87,7 +87,7 @@ namespace Postman_Load_Tester
                         }
                         if (apiKeyInput == "2")
                         {
-                            Select("API Key", Resources.ApiKeys.List, Resources.ApiKeys.Selected);
+                            Select("API Key", Resources.ApiKeys.List, ref Resources.ApiKeys.Selected);
                         }
                     }
                 }
@@ -144,7 +144,7 @@ namespace Postman_Load_Tester
             list.Add(item);
         }
 
-        private static void Select(string elementName, IReadOnlyList<KeyValuePair<string, string>> list, string selected)
+        private static void Select(string elementName, IReadOnlyList<KeyValuePair<string, string>> list, ref string selected)
         {
             if (list.Count == 0)
             {
